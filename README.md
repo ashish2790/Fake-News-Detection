@@ -68,26 +68,26 @@ Before running the code, ensure the following libraries and packages are install
 | **Weighted Avg** | 0.98      | 0.94   | 0.94     | 8980    |
 
 ## <h2>Model selection </h2>
-### <h3>Gradient Boosting Classifier</h3>
+### <h3> Logistic Regression Classifier</h3>
 
-The Gradient Boosting Classifier was selected as the final model due to its impressive performance across various metrics. Gradient Boosting is an ensemble technique that builds multiple weak learners (typically decision trees) in a sequential manner, where each subsequent model corrects the errors of its predecessor. This results in a powerful and accurate predictive model.
+The Logistic Regression Classifier was selected as the final model due to its impressive performance across various metrics.  Logistic Regression is an ensemble technique that builds multiple weak learners (typically decision trees) in a sequential manner, where each subsequent model corrects the errors of its predecessor. This results in a powerful and accurate predictive model.
 
 #### **Performance Summary**
 
-- **Precision:** The Gradient Boosting Classifier achieved a precision of 1.00 for class 0 (true news) and 0.99 for class 1 (fake news). High precision indicates that the model correctly identifies a high proportion of actual positive instances without misclassifying too many negative instances as positive.
+- **Precision:** The Gradient Boosting Classifier achieved a precision of 0.95 for class 0 (true news) and 0.94 for class 1 (fake news). High precision indicates that the model correctly identifies a high proportion of actual positive instances without misclassifying too many negative instances as positive.
 
-- **Recall:** The model demonstrated perfect recall of 1.00 for class 0, meaning it identified all actual true news articles. For class 1, recall is also 1.00, signifying that it captured all fake news articles accurately.
+- **Recall:** The model demonstrated perfect recall of 0.95 for class 0, meaning it identified all actual true news articles. For class 1, recall is also 0.95, signifying that it captured all fake news articles accurately.
 
-- **F1-Score:** The F1-score of 1.00 for both classes reflects a balance between precision and recall, showcasing the model's overall effectiveness in identifying both true and fake news articles accurately.
+- **F1-Score:** The F1-score of 0.95 for both classes reflects a balance between precision and recall, showcasing the model's overall effectiveness in identifying both true and fake news articles accurately.
 
-- **Accuracy:** With an overall accuracy of 1.00, the Gradient Boosting Classifier correctly classified all instances in the dataset, indicating exceptional performance.
+- **Accuracy:** With an overall accuracy of 0.95, the Logistic Regression Classifier correctly classified all instances in the dataset, indicating exceptional performance.
 
-- **Macro Average:** The macro average values of precision, recall, and F1-score are all 1.00, demonstrating the model's consistent performance across both classes.
+- **Macro Average:** The macro average values of precision, recall, and F1-score are all 0.95, demonstrating the model's consistent performance across both classes.
 
-- **Weighted Average:** The weighted average scores, also 1.00, confirm that the model performs uniformly well across different class distributions in the dataset.
-
-#### **Conclusion**
+- **Weighted Average:** The weighted average scores, also 0.95, confirm that the model performs uniformly well across different class distributions in the dataset.
 
 #### **Conclusion**
 
-The <b>Gradient Boosting Classifier</b> has proven to be highly effective for the fake news detection task, providing excellent results across all performance metrics. Its ability to handle complex patterns in the data and achieve perfect classification makes it a strong candidate for deployment in real-world applications to combat misinformation.
+#### **Conclusion**
+
+The <b>Logistic Regression Classifier</b> has proven to be highly effective for the fake news detection task, providing excellent results across all performance metrics. Its ability to handle complex patterns in the data and achieve perfect classification makes it a strong candidate for deployment in real-world applications to combat misinformation.
